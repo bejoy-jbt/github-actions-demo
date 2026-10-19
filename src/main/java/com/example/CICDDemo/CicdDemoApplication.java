@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 public class CicdDemoApplication {
-	@GetMapping("/w")
+	@GetMapping("/")
 	public String great2() {
 		return " Wellcome to my first CICD demo project";
 	}
