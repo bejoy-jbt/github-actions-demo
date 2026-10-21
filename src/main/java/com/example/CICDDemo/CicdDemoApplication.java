@@ -16,7 +16,7 @@ public class CicdDemoApplication {
 	
 	@GetMapping("/{name}")
 	public String great3(@PathVariable String name) {
-		return " Wellcome " + name +" please to wellcome to out page";
+		return " Welcome " + name +" please to wellcome to out page";
 	}
 	
 	
