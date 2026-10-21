@@ -3,6 +3,7 @@ package com.example.CICDDemo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
@@ -13,6 +14,10 @@ public class CicdDemoApplication {
 		return " Wellcome to my first CICD demo project";
 	}
 	
+	@GetMapping("/{name}")
+	public String great3(@PathVariable String name) {
+		return " Wellcome " + name +" please to wellcome to out page";
+	}
 	
 	
 	@GetMapping("/wellcome")
